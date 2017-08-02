@@ -1,0 +1,26 @@
+DROP DATABASE IF EXISTS bamazon_DB;
+CREATE DATABASE bamazon_DB;
+
+USE bamazon_DB;
+
+CREATE TABLE products(
+  item_id INT NOT NULL AUTO_INCREMENT,
+  product_name VARCHAR(100) NOT NULL,
+  department_name VARCHAR(45) NOT NULL,
+  price INT default 0,
+  stock_quantity INT default 0,
+  PRIMARY KEY (item_id)
+);
+
+INSERT INTO products (product_name, department_name, price, stock_quantity) values ('Ryobi Chainsaw', 'Lawn and Garden', 109, 5);
+INSERT INTO products (product_name, department_name, price, stock_quantity) values ('Toro Lawn Mower', 'Lawn and Garden' , 459.99, 7);
+INSERT INTO products (product_name, department_name, price, stock_quantity) values ('Weber Smokey Mountain', 'Grilling', 299, 8);
+INSERT INTO products (product_name, department_name, price, stock_quantity) values ('BBQ Thermometer', 'Grilling' , 28.95, 3);
+INSERT INTO products (product_name, department_name, price, stock_quantity) values ('WEN 56200i Generator', 'Outdoor' , 475, 5);
+INSERT INTO products (product_name, department_name, price, stock_quantity) values ('Outdoor Patio Glider', 'Patio Furniture' , 299, 11);
+INSERT INTO products (product_name, department_name, price, stock_quantity) values ('Tropical Hammock', 'Patio Furniture' , 45, 2);
+INSERT INTO products (product_name, department_name, price, stock_quantity) values ('Akorn Kamado Kooker', 'Grilling' , 290, 15);
+INSERT INTO products (product_name, department_name, price, stock_quantity) values ('Portable DVD Player ', 'Electronics' , 55, 10);
+INSERT INTO products (product_name, department_name, price, stock_quantity) values ('Bluetooth Outdoor speakers', 'Electronics' , 60, 6);
+
+select * FROM products;
