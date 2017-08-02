@@ -1,6 +1,8 @@
 # Bamazon
 
-Bamazon is a data driven js node command line application with a MySQL database backend that displays products for sale in a table.  
+Bamazon is a data driven JS Node command line application with a MySQL database backend that displays products for sale in a table.  
+
+The app is launched by typing node bamazonCustomer.js into the Git Bash command line.
 
 After launching the app the user is shown the table of items and  prompted to enter the name of the product they wish to purchase.
 
